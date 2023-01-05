@@ -1,0 +1,522 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* .container p {
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-fill-mode: backwards;
+}
+
+.container p {
+    animation-name: animate-glow;
+    animation-timing-function: ease;
+}
+
+@keyframes animate-glow {
+    0% {
+        opacity: 0;
+        filter: brightness(3) saturate(3);
+        transform: scale(0.8, 0.8);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1) saturate(1);
+        transform: scale(1, 1);
+    }
+} */
+
+
+/* **************cards start************* */
+
+.layouts-box {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+
+/* **************cards end************* */
+
+
+/* .layouts-box {
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-duration: 3s;
+}
+
+@keyframes animate-pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+} */
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 10px 0 10px 100px;
+    background-color: whitesmoke;
+    display: flex;
+    text-align: center;
+}
+
+.container p {
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 40px;
+    padding: 15px 0 15px 25px;
+    color: #006a6a;
+}
+
+.search-container {
+    padding: 28px 0 15px 240px;
+    justify-content: center;
+}
+
+.search-container form input,
+button {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+@media(max-width:850px) {
+    .container {
+        display: block;
+        padding: 10px;
+        justify-content: center;
+    }
+    .search-container {
+        padding: 0;
+    }
+}
+
+
+/* ******************Navbar Ends******************* */
+
+.container-layout {
+    height: 100%;
+    background-image: url("assets/library-background.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+}
+
+.layout {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.layouts-box {
+    width: 400px;
+    text-align: center;
+}
+
+.layouts-box p {
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 20px;
+}
+
+
+/* .layouts-box p a {
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 20px;
+} */
+
+.layout-items {
+    box-shadow: 0 3px 5px rgb(0, 0, 0);
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+    margin: 20px;
+    border-radius: 8px;
+    color: rgb(20, 20, 20);
+}
+
+
+/* .layout-items p a {
+    color: rgb(20, 20, 20);
+} */
+
+.layout-items h1 {
+    padding: 5px;
+}
+
+.layout-items h3 {
+    padding: 5px;
+}
+
+.layout-items p {
+    padding: 5px;
+}
+
+.layout-items:hover {
+    transform: translateY(-5px);
+    background-color: rgb(29, 35, 30);
+    color: rgb(198, 198, 198);
+    box-shadow: 0 3px 5px rgb(179, 179, 179);
+}
+
+
+/* 
+.layout-items:hover a {
+    color: rgb(198, 198, 198);
+} */
+
+@media(max-width:760px) {
+    .container-layout {
+        padding: 0;
+    }
+    .container-inner-layout {
+        padding: 155px 20px 15px 20px;
+    }
+    .layout {
+        display: block;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+    }
+    .layouts-box {
+        width: 500px;
+        text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+    .container-layout {
+        padding: 0;
+    }
+    .layouts-box {
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media(max-width:420px) {
+    .container-layout {
+        padding: 0;
+    }
+    .layouts-box {
+        width: 350px;
+        text-align: center;
+    }
+}
+
+@media(max-width:380px) {
+    .container-layout {
+        padding: 0 0 0 0;
+    }
+    .layouts-box {
+        width: 250px;
+        text-align: center;
+    }
+}
+
+
+/* **************** footer****************/
+
+footer {
+    background-color: black;
+}
+
+.top-navbar {
+    width: 100%;
+    padding: 20px;
+}
+
+.top-nav-content {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 1px;
+}
+
+.top-nav-content ul {
+    display: flex;
+    padding-right: 10px;
+}
+
+.top-nav-content ul li {
+    list-style: none;
+    padding-right: 10px;
+    color: white;
+}
+
+.top-nav-content ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.top-nav-content ul li a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+#facebook:hover {
+    color: #4267B2;
+    background-color: white;
+}
+
+#twitter:hover {
+    color: #00acee;
+    background-color: white;
+}
+
+#linkedin:hover {
+    color: #0e76a8;
+    background-color: white;
+}
+
+#youtube:hover {
+    color: #c4302b;
+    background-color: white;
+}
+
+@media(max-width:510px) {
+    .top-nav-content {
+        display: block;
+        margin: 0%;
+    }
+    .top-nav-content ul {
+        justify-content: center;
+        padding: 2px;
+    }
+}
+
+@media(max-width:421px) {
+    .top-nav-content {
+        display: block;
+        margin: 0%;
+    }
+    .top-nav-items1 ul {
+        text-align: center;
+        padding: 2px;
+        display: block;
+    }
+}
+
+footer p {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+/* **************************** First Year*****************************/
+
+#subject-page {
+    background-image: linear-gradient( rgb(6, 80, 83), rgb(255, 255, 255));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-subject {
+    width: 100%;
+    display: flex;
+    padding: 70px 0 0 140px;
+}
+
+.content-subject {
+    position: relative;
+}
+
+.content-subject2 {
+    margin-left: 80px;
+}
+
+.item-subject img {
+    border: 3px solid #015c5c;
+    border-radius: 60px;
+    background-color: white;
+}
+
+.item-vertical-line {
+    position: absolute;
+    width: 10px;
+    height: 800px;
+    background: #006a6a;
+    left: 58px;
+}
+
+#list {
+    margin-top: 100px;
+}
+
+.item-name {
+    padding: 20px 0px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.item-name h1 {
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.item-list {
+    display: flex;
+}
+
+.item-line {
+    font-size: 45px;
+    color: rgb(5, 75, 92);
+    margin-top: 25px;
+}
+
+.item-list1 {
+    background-image: linear-gradient(to right, #0b3c3c, #057070);
+    padding: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 8px rgb(59, 59, 59);
+}
+
+.item-list1:hover {
+    transform: translateY(-10px);
+    background-color: rgb(29, 35, 30);
+    color: rgb(198, 198, 198);
+    box-shadow: 0 3px 5px rgb(179, 179, 179);
+}
+
+.item-list1 p {
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 17px;
+    color: white;
+}
+
+
+/* ************************** Books ******************************/
+
+
+/* .book-content {
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+}
+
+.book-content h1 {
+    margin-right: 500px;
+}
+
+.clickable-card {
+    display: block;
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center center;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.clickable-card h2,
+.clickable-card .read-more {
+    transition: color 0.4s ease-in-out;
+}
+
+.clickable-card img {
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.clickable-card:hover .read-more,
+.clickable-card:focus .read-more,
+.clickable-card:hover h2,
+.clickable-card:focus h2 {
+    color: #28666e;
+}
+
+.clickable-card:hover img,
+.clickable-card:focus img {
+    transform: scale(1.1);
+}
+
+.article-body {
+    padding: 24px;
+}
+
+.clickable-card h2 {
+    margin: 0 0 18px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    transition: color 0.3s ease-out;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+} */

@@ -1,0 +1,396 @@
+/* * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url("assets/istockphoto-872229066-170667a.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/************************
+     Learnings.html
+************************/
+
+.learnings-nav {
+    width: 100%;
+    box-shadow: 2px 2px 1px rgb(155, 153, 153);
+    padding: 15px;
+    margin: 0%;
+    display: flex;
+    /* position: fixed; */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.learnings-nav a {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 179, 0);
+}
+
+.container-l {
+    /* background-image: linear-gradient(skyblue, white); */
+    margin: 0%;
+}
+
+.learning-main {
+    /* padding: 30px 30px 30px 30x; */
+    margin: 0px;
+    padding-top: 60px;
+}
+
+.learning-main h1 {
+    padding: 30px 20px 20px 15%;
+    margin: 0px;
+    color: white;
+}
+
+.learning-cards {
+    padding: 10px;
+}
+
+.learning-card-items {
+    padding: 0%;
+    margin: 0%;
+}
+
+.learning-card-items img {
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 5px;
+}
+
+.learning-card-text {
+    width: 280px;
+    height: 150px;
+    border: 1px solid rgb(105, 105, 105);
+    border-style: none solid solid solid;
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+    margin: 0%;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.learning-contents {
+    justify-content: center;
+    /* background-color: #2b305d; */
+    background-color: black;
+    width: 90%;
+    padding: auto;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(96, 97, 108);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.learning-contents h2 {
+    margin-left: 4%;
+    margin-bottom: 20px;
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.learning-contents-inn {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: auto;
+    margin: auto;
+    /* padding-top: 50px;
+    margin-top: 20px; */
+}
+
+.learnings-contents-sub-inn {
+    display: flex;
+}
+
+@media(max-width:1450px) {
+    .learning-contents {
+        justify-content: center;
+        background-color: white;
+        width: 80%;
+        padding: auto;
+        margin: auto;
+        padding-top: 50px;
+        margin-top: 15px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .learning-contents-inn {
+        padding: 20px;
+        margin: auto;
+    }
+    .learnings-contents-sub-inn {
+        display: block;
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+    .learning-card-text {
+        width: 100%;
+    }
+}
+
+@media(max-width:950px) {
+    .learning-contents-inn {
+        display: block;
+        justify-content: center;
+        background-color: white;
+        padding: 20px;
+        margin: auto;
+        /* padding-top: 50px;
+        margin-top: 20px; */
+    }
+    .learning-cards {
+        padding: auto;
+        margin: auto;
+        width: auto;
+    }
+    .learning-contents {
+        justify-content: center;
+        background-color: white;
+        width: 80%;
+        padding: auto;
+        margin: auto;
+        padding-top: 50px;
+        margin-top: 15px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .learnings-contents-sub-inn {
+        display: block;
+    }
+    iframe {
+        width: 100%;
+    }
+    .learning-card-text {
+        width: 100%;
+    }
+}
+
+
+/* **************** footer****************/
+
+footer {
+    /* background-color: black; */
+    background-image: linear-gradient(rgba(24, 49, 79, 0.5), black);
+}
+
+.top-navbar {
+    width: 100%;
+    padding: 20px;
+}
+
+.top-nav-content {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 1px;
+}
+
+.top-nav-content ul {
+    display: flex;
+    padding-right: 10px;
+}
+
+.top-nav-content ul li {
+    list-style: none;
+    padding-right: 10px;
+    color: white;
+}
+
+.top-nav-content ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.top-nav-content ul li a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+#facebook:hover {
+    color: #4267B2;
+    background-color: white;
+}
+
+#twitter:hover {
+    color: #00acee;
+    background-color: white;
+}
+
+#linkedin:hover {
+    color: #0e76a8;
+    background-color: white;
+}
+
+#youtube:hover {
+    color: #c4302b;
+    background-color: white;
+}
+
+@media(max-width:510px) {
+    .top-nav-content {
+        display: block;
+        margin: 0%;
+    }
+    .top-nav-content ul {
+        justify-content: center;
+        padding: 2px;
+    }
+}
+
+@media(max-width:421px) {
+    .top-nav-content {
+        display: block;
+        margin: 0%;
+    }
+    .top-nav-items1 ul {
+        text-align: center;
+        padding: 2px;
+        display: block;
+    }
+}
+
+footer p {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    /* float: left; */
+    border: 1px solid rgb(197, 197, 197);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #b7b7b7;
+    cursor: default;
+    background: rgb(241, 241, 241) url(../images/bgimg.jpg) no-repeat center center
+}
+
+.view .mask,
+.view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.view img {
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    padding-left: 50px;
+}
+
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.view-first img {
+    transition: all 0.2s linear;
+}
+
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219, 127, 8, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first p {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.view-first a.info {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img {
+    transform: scale(1.1);
+}
+
+.view-first:hover .mask {
+    opacity: 1;
+}
+
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
